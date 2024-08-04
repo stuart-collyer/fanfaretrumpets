@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: darkred;
+  font-family: "Cormorant Garamond";
+  font-size: 22px;
+}
+
+body,
+html {
+  margin: 0;
+  background-color: cornsilk;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+a {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: silver;
+}
+
+.hero-section {
+  background-image: url(./trumpet-header-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vw;
+  border-top: 1.5px solid darkred;
+  border-bottom: 1.5px solid darkred;
+}
+
+p,
+li {
+  font-style: italic;
+  font-size: 1.5rem;
+
+}
+
+li {
+  list-style: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1100px) {
+  #team {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  #navbar {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  #navbar {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #productsAndServices {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section {
+    display: none;
+  }
+
+  #team {
+    flex-direction: column;
+  }
+
+  .team-member .content {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .team-member .center {
+    border: 1px solid darkred;
+  }
+}
+
+/* -------------------------------------------- */
+/* About Section - START */
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1vw;
+  margin-bottom: 50px;
+}
+
+.side {
+  display: flex;
+  height: 10vw;
+}
+
+.center {
+  text-align: center;
+}
+/* About Section - END */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/* Products and Services Section - START */
+#productsAndServices {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Products and Services Section - END */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/* Team Section - START */
+#team {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+}
+
+.team-member {
+  flex: 1;
+  padding: 2rem;
+  margin: 0px 1.25rem;
+  background-color: rgb(244, 236, 204);
+}
+
+.team-member .image-container {
+  width: 100%;
+  height: 65%;
+  margin: 0 auto;
+}
+
+.team .content {
+  padding: 2.5rem 0;
+}
+
+.team h2 {
+  padding-bottom: 0.5rem;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+/* Team Section - END */
+/* -------------------------------------------- */
+
+footer {
+  text-align: center;
+}
